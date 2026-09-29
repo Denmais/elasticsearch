@@ -26,11 +26,12 @@ echo $?
 
 Приложение доступно по адресу `http://127.0.0.1:8000`.
 
-| Метод и URL | Что делает и проверяет |
-| --- | --- |
 | `POST http://127.0.0.1:8000/documents` | Создаёт документ в PostgreSQL и добавляет его в Elasticsearch. 
 
 | `GET http://127.0.0.1:8000/documents?limit=20` | Возвращает последние документы из PostgreSQL. `limit` допускает значения от 1 до 100.
-|
-| `GET http://127.0.0.1:8000/documents/search?q=тест` | Ищет документы по тексту через Elasticsearch. Пустой запрос отклоняется.  |
+
+
+| `GET http://127.0.0.1:8000/documents/search?q=тест` | Ищет документы по тексту через Elasticsearch. Пустой запрос отклоняется
+
+
 | `DELETE http://127.0.0.1:8000/documents/{doc_id}` | Удаляет документ из PostgreSQL и Elasticsearch; если ID не найден, возвращает 404. |
