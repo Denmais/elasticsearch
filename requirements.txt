@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy>=2,<3
+asyncpg
+alembic
+elasticsearch[async]==9.5.1
+pytest
+httpx
