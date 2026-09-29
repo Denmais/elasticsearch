@@ -3,7 +3,7 @@
 Из каталога проекта:
 
 ```bash
-docker compose up -d --build --wait
+docker compose up --build
 ```
 
 Приложение: http://127.0.0.1:8000
@@ -15,12 +15,6 @@ docker compose --profile test run --rm test
 ```
 
 В выводе должно быть `1 passed`
-
-```bash
-echo $?
-```
-
-`0` означает, что тесты прошли.
 
 # API
 
